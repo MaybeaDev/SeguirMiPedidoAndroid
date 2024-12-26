@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Fondo del elemento -->
+    <solid android:color="#FFFFFF" /> <!-- Cambia a tu color de fondo deseado -->
+
+    <!-- Bordes -->
+    <stroke
+        android:width="2dp"
+        android:color="#646464" /> <!-- Color negro (usa #FF000000 para asegurarte del formato ARGB) -->
+
+</shape>

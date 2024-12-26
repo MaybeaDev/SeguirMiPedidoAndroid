@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/registrar_entrega_fallida"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_constraintEnd_toEndOf="parent"
+        tools:layout_constraintStart_toStartOf="parent"
+        tools:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPaquete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/paquete"
+        app:layout_constraintEnd_toStartOf="@id/tvPaqueteCodigo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitulo" />
+
+    <TextView
+        android:id="@+id/tvPaqueteCodigo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPaquete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvPaquete"
+        app:layout_constraintTop_toTopOf="@+id/tvPaquete"
+        tools:text="1234567890123" />
+
+    <TextView
+        android:id="@+id/tvRecibe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/recibe"
+        app:layout_constraintEnd_toStartOf="@id/tvRecibeValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvPaquete" />
+
+    <TextView
+        android:id="@+id/tvRecibeValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tvRecibe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvRecibe"
+        app:layout_constraintTop_toTopOf="@+id/tvRecibe"
+        tools:text="Juanito perez" />
+
+    <TextView
+        android:id="@+id/tvTelefono"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/telefono"
+        app:layout_constraintEnd_toStartOf="@id/tvTelefonoValue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRecibe" />
+
+    <TextView
+        android:id="@+id/tvTelefonoValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTelefono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvTelefono"
+        app:layout_constraintTop_toTopOf="@+id/tvTelefono"
+        tools:text="912345678" />
+
+    <EditText
+        android:id="@+id/etMotivoFallo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:layout_marginBottom="20dp"
+        android:autofillHints=""
+        android:background="@drawable/input_background"
+        android:hint="@string/motivo_de_fallo"
+        android:inputType="textMultiLine"
+        android:maxLines="4"
+        android:minLines="2"
+        app:layout_constraintTop_toBottomOf="@id/tvTelefono" />
+    <TextView
+        android:id="@+id/tvExplicacionMotivoFallo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="@string/explicacion_motivo_fallo"
+        app:layout_constraintTop_toBottomOf="@id/etMotivoFallo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btnRegistrarFallo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_button"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/tvExplicacionMotivoFallo"
+        android:text="@string/registrar_fallo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

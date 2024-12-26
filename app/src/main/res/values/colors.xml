@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="danger_button_start">#E74F4F</color>
+    <color name="danger_button_end">#E62C2C</color>
+    <color name="orange_background">#F8A600</color>
+    <color name="orange_button">#FF8800</color>
+    <color name="orange_button_start">#FF8800</color>
+    <color name="orange_button_end">#b56908</color>
+    <color name="gray_button_start">#898989</color>
+    <color name="gray_button_end">#7A7A7A</color>
+    <color name="text_color_gris">#434343</color>
+    <color name="green_button">#2FE639</color>
+
+
+</resources>
